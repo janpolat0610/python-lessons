@@ -74,17 +74,17 @@ Created on Mon Jul 29 16:27:44 2024
 
 
 
-print('sannin kvadratin shigariwshi programma')
-san='san kiritin'
-san += "(eger toqtatpaqshi bolsaniz 'exit' deb jazin )"
-belgi=True
-while belgi:
-    manis=input(san)
-    if manis=='exit':
-        belgi=False
-    else:
-        print(float(manis)**2)
-print('programma toqtadi')
+# print('sannin kvadratin shigariwshi programma')
+# san='san kiritin'
+# san += "(eger toqtatpaqshi bolsaniz 'exit' deb jazin )"
+# belgi=True
+# while belgi:
+#     manis=input(san)
+#     if manis=='exit':
+#         belgi=False
+#     else:
+#         print(float(manis)**2)
+# print('programma toqtadi')
     
 
 

@@ -88,6 +88,62 @@ Created on Mon Jul 29 16:27:44 2024
     
 
 
+# print('jaqin doslar dizimin duzemiz')
+# doslar=[]
+# n=1
+# while True:
+#     soraw=f'{n}-dosiniz kim? \n'
+#     ati=input(soraw)
+#     doslar.append(ati)
+#     qaytalaw=input('jane dos qosasizba? awa/yaq \n')
+#     n+=1
+#     if qaytalaw !='awa':
+#         break
+#     elif qaytalaw != 'awa' or 'yaq':
+#         continue
+
+
+
+
+ #                Funkciya
+
+# 1
+
+# def salember():
+#     """Assalawma aleykum funksiyasi"""
+#     print('assalawma aleykum!')
+ 
+# salember()
+
+# 2
+
+
+# def salemles(ati):
+#     """"Salemlesetugin funksiya"""
+#     print(f'assalawma aleykum {ati.title()}')
+
+# a=input('atiniz \n')
+# salemles(a)
+
+# print(salemles.__doc__)
+
+
+
+
+
+def jas_esaplawshi(ati,t_jili):
+    """Jas esaplawshi funkiya"""
+    print(f'{ati.title()} {2024-t_jili} jasda')
+at=input()
+tjili=int(input())
+
+jas_esaplawshi(at,tjili)
+
+
+
+
+
+
 
 
 

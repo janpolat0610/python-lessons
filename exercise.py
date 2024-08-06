@@ -131,17 +131,24 @@ Created on Mon Jul 29 16:27:44 2024
 
 
 
-def jas_esaplawshi(ati,t_jili):
-    """Jas esaplawshi funkiya"""
-    print(f'{ati.title()} {2024-t_jili} jasda')
-at=input()
-tjili=int(input())
+# def jas_esaplawshi(ati,t_jili):
+#     """Jas esaplawshi funkiya"""
+#     print(f'{ati.title()} {2024-t_jili} jasda')
+# at=input('atiniz \n>>>')
+# tjili=int(input('tuwilgan jiliniz \n>>>'))
 
-jas_esaplawshi(at,tjili)
-
-
+# jas_esaplawshi(at,tjili)
 
 
+# def toliq_at_jasa(ati,familyasi):
+#     """Toliq at jasawshi funkciya"""
+#     toliq_ati=f'{familyasi.title()} {ati.title()}'
+#     return toliq_ati
+
+# at=input('atiniz \n>>>')
+# familya=input('familyaniz \n>>>')
+# oquwshi=toliq_at_jasa(at, familya)
+# print(oquwshi)
 
 
 

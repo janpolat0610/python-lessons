@@ -34,7 +34,7 @@ Created on Mon Jul 29 16:27:44 2024
 # telefonlar={
 #     'ali':'iphone x',
 #     'vali':'galaxy s10',
-    # 'sarvar':'mi 10'}
+#     'sarvar':'mi 10'}
 # for k,q in telefonlar.items():
 #     print(f'{k}ning telefoni {q}')
 # for k in telefonlar.keys():
@@ -72,7 +72,7 @@ Created on Mon Jul 29 16:27:44 2024
 # print('programma toqtadi')
 
 
-
+# 5
 
 # print('sannin kvadratin shigariwshi programma')
 # san='san kiritin'
@@ -102,7 +102,7 @@ Created on Mon Jul 29 16:27:44 2024
 #     elif qaytalaw != 'awa' or 'yaq':
 #         continue
 
-
+# print(doslar)
 
 
  #                Funkciya
@@ -155,13 +155,188 @@ Created on Mon Jul 29 16:27:44 2024
 
 
 
+# def toliq_at(ati,familyasi,akesinin_ati=""):
+#     if akesinin_ati:
+#         toliq_ati=f'{ati} {akesinin_ati} {familyasi}'
+#     else:
+#         toliq_ati=f'{ati} {familyasi}'
+#     return toliq_ati.title()
+
+# oqiwshi=input('atiniz?\n>>>')
+# familya=input('familyaniz\n>>>')
+# atasinin_ati=input('akenizdin ati?(qalewiniz)\n>>>')
+# toliq_at=toliq_at(oqiwshi,familya,atasinin_ati)
+# print(f'assalawma aleykum {toliq_at}')     
+
+
+# def bahalaw(atlari):
+#     '''bahalaw ushin funkciya'''
+#     bahalar={}
+#     while atlari:
+#         at=atlari.pop()
+#         baha=input(f'{at.title()} ga baha qoyin\n>>>')
+#         bahalar[at]=int(baha)
+#     return bahalar
+
+
+# oquwshilar={'Janpolat','Ernur','Alisher'}
+# bahalar=bahalaw(oquwshilar[:])
+# print(bahalar)
 
 
 
+# def bazar(kompanya,model,jili,reni,probeg,bahasi=None):
+#     """avto bazar"""
+#     avto={'kompanya':kompanya,
+#               'model':model,
+#               'jili':jili,
+#               'reni':reni,
+#               'probeg':probeg,
+#               'bahasi':bahasi}
+#     return avto
+
+# k=input('kompanya \n>>>')
+# m=input('model \n>>>')
+# j=int(input('jili \n>>>'))
+# r=input('reni\n>>>')
+# p=int(input('probeg \n>>>'))
+# b=int(input('bahasi (jaziw iqtiyariy) \n>>>'))
+# mashina=bazar(k,m,j,r,p,b)
+# print(mashina)
+
+
+#                  math
+# import math
+# a='sannin korenin tabiwshi programma'
+# print(a)
+# b='qalegen san kiritin(eger toqtatpaqshi bolsaniz exit dep jazin)   '
+# manis=""
+# while manis!='exit':
+#     manis=input(b)
+#     if manis!='exit':
+#         manis=int(manis)
+#         print(math.sqrt(manis))
+# print('programma toqtadi')
+        
+    
+    
+# import math
+# a='sannin korenin tabiwshi programma'
+# print(a)
+# b='qalegen san kiritin(eger toqtatpaqshi bolsaniz exit dep jazin)   '
+# manis=""
+# qa='dareje kiritin   '
+# dareje=''
+# while manis!='exit':
+#     manis=input(b)
+#     if manis!='exit':
+#         manis=int(manis)
+#         dareje=int(input(qa))
+#         print(math.pow(manis,dareje))
+#     else:
+#         break
+# print('programma toqtadi')
+    
+
+# import math
+
+# x=100
+
+# print(math.sqrt(x))
+
+# print(math.pow(5,2))
+
+# print(math.pi)   
+    
+
+#                     random
+
+
+import random as r 
+
+  # randint
+a=r.randint(1, 10)
+print(a)
+
+# sanlar=list(r.sample(range(100),10))
+# print(sanlar)
+
+
+# choise 
+
+# atlar=['jasur','bayram','ernur','alisher','musa']
+# b=r.choice(atlar)
+# print(b)     
+# print(r.choice(b))
+    
+#   shuffle
+
+
+# a=list(range(1,25))
+# print(a)
+# r.shuffle(a)
+# print(a)
 
 
 
+#         lambda
 
+# import math
+
+
+# uzinliq= lambda pi , r : 2*pi*r
+# print(uzinliq(math.pi,10))
+
+# def dareje(n):
+#     return lambda x : x**n
+
+# kvadrat=dareje(2)
+# kub=dareje(3)
+
+# a=int(input())
+# b=kub(a)
+# print(b)
+
+
+
+# from math import sqrt
+
+
+# def juppa(x):
+#     '''sannin jup ya taqligin aniqlawshi programma'''
+#     return x%2==0
+
+
+# print('sannin jup ya taqligin aniqlaymiz')
+# a=int(input('qalegen san kiritin \n>>>'))
+# print(juppa(a))
+
+
+
+# jupsanlar=list(filter(juppa,sanlar))
+
+
+# jupsanlar=list(filter(lambda x : x%2==0,sanlar))
+
+# print(jupsanlar)
+
+
+# miyweler=['banan','erik','alma','almurt','anar','anjir','qareli']
+
+# harip='a'
+
+# b=list(filter(lambda miywe : miywe.startswith(harip),miyweler))
+
+# print(b)
+
+
+
+# import random as r
+
+# def son_top():
+#     '''san tabiw'''
+    
+    
 
 
 

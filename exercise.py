@@ -252,11 +252,11 @@ Created on Mon Jul 29 16:27:44 2024
 #                     random
 
 
-import random as r 
+# import random as r 
 
   # randint
-a=r.randint(1, 10)
-print(a)
+# a=r.randint(1, 10)
+# print(a)
 
 # sanlar=list(r.sample(range(100),10))
 # print(sanlar)
@@ -330,13 +330,72 @@ print(a)
 # print(b)
 
 
+import random as r
 
-# import random as r
+def son_top(x=10):
+    '''san tabiw'''
+    print('san tabiw oyini, men bir san oyladim taba alasizba?')
+    c=r.randint(1,x)
+    san=('sandi tabiwga hareket etin' )
+    a=True
+    urinis=0
+    while a:
+        urinis=urinis+1
+        san=int(input())
+        if san<c:  
+            print(f'men oylagan san {san} dan ulken')          
+        elif san>c:
+            print(f'men oylagan san {san} dan kishi')
+        else:
+            break
+    print('                                       ')
+    print(f'qutliqlayman men oylagan san {c} edi siz oni {urinis} urinisda taptiniz')
+    return urinis
 
-# def son_top():
-#     '''san tabiw'''
+
+def san_tap_pc(x=10):
+    print('men siz oylagan sandi tabaman')
+    joqari=x
+    tomen=1
+    urinis=0
+    while True:
+        urinis=urinis+1
+        if tomen!=joqari:
+            san=r.randint(tomen,joqari)
+        else:
+            san=tomen
+        a=input(f'siz {san} sanin oyladiniz duris bolsa d eger siz oylagan san {san} saninan ulken bolsa + kishi bolsa - di jiberin  >>>')
+        if a=='-':
+            joqari=san-1 
+        elif a=='+':
+            tomen=san+1
+        elif a=='d':
+            break
+    print('                                       ')
+    print(f'men siz oylagan sandi {urinis} urinista taptim')
+    return urinis
     
     
+def play(x=10):
+    'oyin baslaw'
+    print('oyin baslandi')
+    jane=True
+    while jane:
+        urinislar_user=son_top(x)
+        urinislar_pc=san_tap_pc(x)
+        if urinislar_user<urinislar_pc:
+            print('                                       ')
+            print('BUL OYINDA SIZ UTTINIZ')
+        elif urinislar_user>urinislar_pc:
+            print('                                       ')
+            print('BUL OYINDA MEN UTTIM')
+        else:
+            print('                                       ')
+            print('DOSLIQ JENDI')
+            print('                                       ')
+        jane=int(input('Jane oynawdi qaleysizba? awa(1)/yaq(0) \n>>>'))
+        
+        
 
 
 
